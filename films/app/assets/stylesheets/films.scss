@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$red: #990000;
+$grey: #999;
+$default_font: Helvetica, Arial, sans-serif;
+
 *,
 *::before,
 *::after {
@@ -10,7 +14,7 @@
 
 html {
   box-sizing: inherit;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', $default_font;
   font-size: 20px;
   line-height: 1.35;
   height: 100%;
@@ -27,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-family: 'Oswald', $default_font;
   // font-weight: 700;
   line-height: 1.1;
 }
@@ -80,11 +84,11 @@ article > header {
 .hero-title-container > .hero-title {
   font-size: 3rem;
   margin: 2rem 0 0;
-  color: #990000;
+  color: $red;
 }
 
 .hero-title-container > .hero-tagline {
-  color: #999;
+  color: $grey;
   margin: 0.25rem 0;
 }
 
@@ -96,13 +100,13 @@ article > header {
 
 .article-title > h2 {
     font-size: 1.2em;
-    color: #999;
+    color: $grey;
 }
 
 .article-title > h1 {
     font-size: 2rem;
     margin-bottom: 0;
-    color: #990000;
+    color: $red;
 }
 
 // This mixin provides a fancier clearfix than using the overflow property!
